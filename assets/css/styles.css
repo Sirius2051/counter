@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    bottom: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+.container  {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: darkgrey;
+}
+button {
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    color: #ffffff;
+}
+button.menos {
+    background-color: #a81914;
+}
+button.mas {
+    background-color: rgb(29, 103, 183);
+}
+.numero {
+    padding: 2rem 3rem;
+    font-size: 3rem;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: darkolivegreen;
+}
