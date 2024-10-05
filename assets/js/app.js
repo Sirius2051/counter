@@ -91,13 +91,13 @@ document.addEventListener('DOMContentLoaded', () => {
     function autoCount() {
         var steps = parseInt(document.getElementById('steps').value);
         var limit = parseInt(document.getElementById('limit').value);
+        if (limit && parseInt(numero.innerText) + steps > limit) {
+            clearInterval(intervalID)
+        }
         if (!steps) {
             numero.innerText = parseInt(numero.innerText) + 1;
         } else {
             numero.innerText = parseInt(numero.innerText) + steps;
-        }
-        if (limit && parseInt(numero.innerText) + steps > limit) {
-            clearInterval(intervalID)
         }
     }
     auto.addEventListener('click', async () => {
